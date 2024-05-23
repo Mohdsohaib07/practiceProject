@@ -1,0 +1,86 @@
+html,body{
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: rgb(232, 222, 241);
+    display:grid;
+    place-items: center;
+    margin:0;
+}
+.container{margin-top: 100px;
+    background-color: white;
+    width: 50vw;
+    height:50vh;
+    position: relative;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px black;
+}
+h1{
+    margin-top: 40px;
+}
+span{
+    text-transform: uppercase;
+    color:blue;
+}
+img{
+    margin-top: 60px;
+    width: 100px;
+    height: auto;
+    margin-bottom: 35px;
+}
+#heads{
+    position: relative;
+    z-index: 1;
+    transition:  0.2s ease-in-out;
+}
+#tails{
+    position: absolute;
+    transition:  0.2s ease-in-out;
+}
+.ani{
+    animation-name: flipp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+}
+
+button{
+    padding: 10px 25px;
+    background-color: green;
+    color: white;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100px;
+    text-transform:uppercase;
+    text-align:center;
+    cursor: pointer;
+    margin-bottom: -12px;
+}
+button:hover{
+    background-color: rgb(11, 207, 11);
+}
+
+button:active{
+    background-color: rgb(71, 231, 71);
+}
+p{
+    font-size: 2em;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+  
+}
+@keyframes flipp {
+    from{transform:rotateY(0deg);}
+    to{transform: rotateY(80deg);}
+}
+@keyframes spin {
+    from{transform: rotateX(-80deg);}
+    to{ transform: rotateX(80deg);}
+}
